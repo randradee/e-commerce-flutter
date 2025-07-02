@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
-  // Variables
   final int totalPages = 3;
   final RxInt currentPageIndex = 0.obs;
+  final pageController = PageController();
 
   void updatePageIndicator(index) {
     currentPageIndex.value = index;
@@ -13,21 +14,21 @@ class OnBoardingController extends GetxController {
 
   void dotNavigationClick(index) {
     currentPageIndex.value = index;
+    pageController.jumpToPage(index);
   }
 
   void nextPage() {
     if (currentPageIndex.value < totalPages - 1) {
       currentPageIndex.value++;
-    }
-  }
-
-  void previousPage() {
-    if (currentPageIndex.value > 0) {
-      currentPageIndex.value--;
+      pageController.nextPage(
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeIn,
+      );
     }
   }
 
   void skipToLastPage() {
     currentPageIndex.value = totalPages - 1;
+    pageController.jumpToPage(totalPages - 1);
   }
 }

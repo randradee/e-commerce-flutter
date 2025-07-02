@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:store/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:store/features/authentication/views/onboarding/widgets/onboarding_circular_button.dart';
 import 'package:store/features/authentication/views/onboarding/widgets/onboarding_page.dart';
 import 'package:store/features/authentication/views/onboarding/widgets/onboarding_skip_button.dart';
@@ -11,11 +13,15 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
+
     return Scaffold(
       body: Stack(
         children: [
           // Horizontal Scrollable Pages
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: [
               OnBoardingPage(
                 image: AppImages.onboardingImage1,
