@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:store/features/authentication/views/login/login.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
@@ -24,11 +25,13 @@ class OnBoardingController extends GetxController {
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeIn,
       );
+    } else {
+      Get.offAll(const LoginScreen());
     }
   }
 
-  void skipToLastPage() {
-    currentPageIndex.value = totalPages - 1;
-    pageController.jumpToPage(totalPages - 1);
+  void skipToLogin() {
+    currentPageIndex.value = 0;
+    Get.offAll(const LoginScreen());
   }
 }

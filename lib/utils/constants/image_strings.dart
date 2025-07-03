@@ -1,12 +1,12 @@
 class AppImages {
   static const String darkAppLogo =
-      'assets/images/t-store-splash-logo-black.png';
+      'assets/logos/t-store-splash-logo-black.png';
   static const String lightAppLogo =
-      'assets/images/t-store-splash-logo-white.png';
+      'assets/logos/t-store-splash-logo-white.png';
 
   // Social logos
-  static const String facebookLogo = 'assets/images/facebook-logo.png';
-  static const String googleLogo = 'assets/images/google-logo.png';
+  static const String facebookLogo = 'assets/logos/facebook-logo.png';
+  static const String googleLogo = 'assets/logos/google-logo.png';
 
   // Onboarding images
   static const String onboardingImage1 =
