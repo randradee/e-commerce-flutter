@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:store/features/authentication/controllers/login/login_controller.dart';
 import 'package:store/utils/constants/sizes.dart';
 import 'package:store/utils/constants/text_strings.dart';
 
@@ -8,6 +10,8 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(LoginController());
+
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(
@@ -72,7 +76,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: controller.onCreateAccount,
                 child: Text(AppTextStrings.createAccount),
               ),
             ),

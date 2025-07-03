@@ -24,14 +24,14 @@ class LoginScreen extends StatelessWidget {
               LoginHeader(isDarkMode: isDarkMode),
 
               // Login form
-              LoginForm(),
+              const LoginForm(),
 
               // Divider
-              FormDivider(isDarkMode: isDarkMode),
+              FormDivider(),
               const SizedBox(height: AppSizes.spaceBetweenSections),
 
               // Social media buttons
-              SocialButtons(),
+              const SocialButtons(),
             ],
           ),
         ),
