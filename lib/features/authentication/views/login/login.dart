@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:store/common/spacing_styles.dart';
+import 'package:store/common/form_divider.dart';
+import 'package:store/common/social_buttons.dart';
 import 'package:store/features/authentication/views/login/widgets/login_form.dart';
-import 'package:store/features/authentication/views/login/widgets/login_form_divider.dart';
 import 'package:store/features/authentication/views/login/widgets/login_header.dart';
-import 'package:store/features/authentication/views/login/widgets/login_social_buttons.dart';
 import 'package:store/utils/constants/sizes.dart';
 import 'package:store/utils/device/device_utils.dart';
 
@@ -27,11 +27,11 @@ class LoginScreen extends StatelessWidget {
               LoginForm(),
 
               // Divider
-              LoginFormDivider(isDarkMode: isDarkMode),
+              FormDivider(isDarkMode: isDarkMode),
               const SizedBox(height: AppSizes.spaceBetweenSections),
 
               // Social media buttons
-              LoginSocialButtons(),
+              SocialButtons(),
             ],
           ),
         ),

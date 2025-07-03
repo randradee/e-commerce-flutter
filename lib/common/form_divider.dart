@@ -3,8 +3,8 @@ import 'package:get/get_utils/get_utils.dart';
 import 'package:store/utils/constants/colors.dart';
 import 'package:store/utils/constants/text_strings.dart';
 
-class LoginFormDivider extends StatelessWidget {
-  const LoginFormDivider({super.key, required this.isDarkMode});
+class FormDivider extends StatelessWidget {
+  const FormDivider({super.key, required this.isDarkMode});
 
   final bool isDarkMode;
 
