@@ -15,4 +15,12 @@ class AppImages {
       'assets/images/on_boarding_images/sammy-line-shopping.gif';
   static const String onboardingImage3 =
       'assets/images/on_boarding_images/sammy-line-delivery.gif';
+
+  // Authentication images
+  static const String verifyEmailImage =
+      'assets/images/animations/sammy-line-man-receives-a-mail.png';
+
+  // Success screen
+  static const String successImage =
+      'assets/images/animations/sammy-line-success.png';
 }

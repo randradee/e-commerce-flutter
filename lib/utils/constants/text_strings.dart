@@ -5,7 +5,7 @@ class AppTextStrings {
   static const String done = "Done";
   static const String submit = "Submit";
   static const String appName = "T-Store";
-  static const String tContinue = "Continue";
+  static const String appContinue = "Continue";
 
   // Onboarding screen
   static const String onboardingTitle1 = 'Choose your product';
@@ -60,7 +60,7 @@ class AppTextStrings {
   static const String emailNotReceivedMessage =
       "Didn’t get the email? Check your junk/spam or resend it.";
   static const String yourAccountCreatedTitle =
-      "Your account successfully created!";
+      "Your account has been successfully created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
 
