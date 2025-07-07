@@ -12,7 +12,7 @@ class OnBoardingSkipButton extends StatelessWidget {
     final controller = OnBoardingController.instance;
 
     return Positioned(
-      top: AppDeviceUtils.getStatusBarHeight(),
+      top: AppDeviceUtils.getStatusBarHeight() + AppSizes.defaultSpace,
       right: AppSizes.defaultSpace,
       child: TextButton(
         onPressed: controller.skipToLogin,
