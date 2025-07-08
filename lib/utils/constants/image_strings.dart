@@ -20,6 +20,10 @@ class AppImages {
   static const String verifyEmailImage =
       'assets/images/animations/sammy-line-man-receives-a-mail.png';
 
+  // Reset password image
+  static const String resetPasswordSent =
+      'assets/images/animations/sammy-line-man-receives-a-mail.png';
+
   // Success screen
   static const String successImage =
       'assets/images/animations/sammy-line-success.png';
